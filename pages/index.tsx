@@ -31,7 +31,7 @@ type Image = {
 export default function Gallery({ images }: { images: Image[] }) {
   return (
     <div>
-      <h1 className="mx-auto pt-8 text-center text-2xl font-semibold text-gray-800">
+      <h1 className="mx-auto pt-8 text-center text-2xl font-bold text-blue-900">
         Secret Agents Array
       </h1>
       <div className="mx-auto max-w-2xl py-4 px-4 sm:py-8 sm:px-6 lg:max-w-7xl lg:px-8">
