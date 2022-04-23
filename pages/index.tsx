@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import { createClient } from '@supabase/supabase-js'
+import Head from 'next/head'
 
 export async function getStaticProps() {
   const supabaseAccess = createClient(
@@ -31,6 +32,9 @@ type Image = {
 export default function Gallery({ images }: { images: Image[] }) {
   return (
     <div>
+      <Head>
+        <title>Secret Agents Array Page</title>
+      </Head>
       <h1 className="mx-auto pt-8 text-center text-2xl font-bold text-blue-900">
         Secret Agents Array
       </h1>
