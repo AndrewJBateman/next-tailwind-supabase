@@ -69,7 +69,7 @@ function DisplayImage({ image }: { image: Image }) {
           onLoadingComplete={() => setLoading(false)}
         />
       </div>
-      <h3 className="mt-4 text-sm text-gray-700">{image.name}</h3>
+      <h2 className="mt-4 text-sm text-gray-700">{image.name}</h2>
       <p className="text-md mt-1 font-medium text-gray-900">{image.username}</p>
     </a>
   )

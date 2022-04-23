@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://next-tailwind-ssr-d5remib6w-gomezbateman.vercel.app/sitemap.xml
