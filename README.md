@@ -42,12 +42,13 @@
 * [supabase-js v1](https://www.npmjs.com/package/@supabase/supabase-js) isomorphic Javascript client for Supabase
 * [TailwindCSS v3](https://www.npmjs.com/package/tailwindcss) CSS framework that helps create very light build packages
 * [@tailwindcss/aspect-ratio](https://www.npmjs.com/package/@tailwindcss/aspect-ratio) used to give elements different fixed aspect ratios depending on screen width
+* [next-secure-headers v2](https://www.npmjs.com/package/next-secure-headers) to set secure response headers
 
 ## :floppy_disk: Setup
 
 * `npm i` to install dependencies then...
 * Create free account with Supabase and create table
-* Add data to table - I found image URLs from [Pinterest](https://www.pinterest.com.mx/). Data was exported from Supabase as a CSV file - see `images_allRows.csv`. It is easy to import this into a new Supabase table and set id as the Primary Key
+* Add data to table - I found image URLs from [Pinterest](https://www.pinterest.com.mx/). Data was exported from Supabase as a CSV file - see `images_allRows.csv`. It is easy to import this into a new Supabase table and set id as the Primary Key. Database also requires a Function Hook to be added so database changes are shown in the deployed app
 * Create `.env.local` then add your Supabase API Authentication credentials as shown in `.env.example.local`
 * `npm run dev` for a dev server. Navigate to `http://localhost:3000/` - app will automatically reload if you change any of the source files
 * `npm run build` for a build folder - not necessary as Vercel creates build files during Deployment
@@ -89,7 +90,7 @@ export async function getStaticProps() {
 
 ## :clap: Inspiration
 
-* [Youtube: Lee Robinson: Building an Image Gallery with Next.js, Supabase, and Tailwind CSS](https://www.youtube.com/watch?v=BSoRXk1FIw8) but with my own database data, other modifications & conversion to PWA.
+* [Youtube: Lee Robinson: Building an Image Gallery with Next.js, Supabase, and Tailwind CSS](https://www.youtube.com/watch?v=BSoRXk1FIw8) but with my own database data, other modifications for a perfect Lighthouse score, including conversion to PWA.
 
 ## :file_folder: License
 
