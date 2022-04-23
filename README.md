@@ -1,6 +1,6 @@
 # :zap: Next Tailwind Supabase
 
-* Next frontend to display images from a Supabase PostgreSQL database
+* Next.js frontend to display images and text from a Supabase PostgreSQL database
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/next-tailwind-supabase?style=plastic)
@@ -27,6 +27,7 @@
 ## :books: General info
 
 * Supabase is an open-source alternative to Firebase, but uses PostgreSQL instead of document database. Database is realtime & can use SQL joins. Realtime notifications via Websockets. RESTful API requires no backend code.
+* Next.js uses React v17
 
 ## :camera: Screenshots
 
@@ -38,15 +39,17 @@
 * [React v17](https://reactjs.org/) Javascript library
 * [Supabase public Beta](https://supabase.io/) Postgres database
 * [supabase-js v1](https://www.npmjs.com/package/@supabase/supabase-js) isomorphic Javascript client for Supabase
+* [TailwindCSS v3](https://www.npmjs.com/package/tailwindcss) CSS framework that helps create very light build packages
+* [@tailwindcss/aspect-ratio](https://www.npmjs.com/package/@tailwindcss/aspect-ratio) used to give elements different fixed aspect ratios depending on screen width
 
 ## :floppy_disk: Setup
 
 * `npm i` to install dependencies then...
-* Create free account with Supabase and create table from SQL menu/User Management Starter as per [tutorial](https://www.youtube.com/watch?v=x38PWNZhSEM)
-* Add data to table - I found image URLs from [Pinterest](https://www.pinterest.com.mx/) - exported as a CSV file - see `images_allRows.csv`. It is easy to import this into a new Supabase table mand set id as the PRIMARY_ID
+* Create free account with Supabase and create table
+* Add data to table - I found image URLs from [Pinterest](https://www.pinterest.com.mx/). Data was exported from Supabase as a CSV file - see `images_allRows.csv`. It is easy to import this into a new Supabase table and set id as the Primary Key
 * Create `.env.local` then add your Supabase API Authentication credentials as shown in `.env.example.local`
-* `ng serve` for a dev server. Navigate to `http://localhost:4200/` - app will automatically reload if you change any of the source files
-* `ng run build` for a build folder
+* `npm run dev` for a dev server. Navigate to `http://localhost:3000/` - app will automatically reload if you change any of the source files
+* `npm run build` for a build folder - not necessary as Vercel creates build files during Deployment
 
 ## :flashlight: Testing
 
@@ -54,7 +57,7 @@
 
 ## :computer: Code
 
-* tba
+* `index.tsx` function to get data from Supabase database
 
 ```typescript
 export async function getStaticProps() {
@@ -75,6 +78,7 @@ export async function getStaticProps() {
 ## :cool: Features
 
 * Supabase user interface is cool to work with and they have SQL templates to create a user login etc.
+* Changes to the Supabase data are automatically displayed in the deployed app using a Supabase Function Hook
 
 ## :clipboard: Status & To-Do List
 
