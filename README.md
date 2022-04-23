@@ -43,7 +43,7 @@
 
 * `npm i` to install dependencies then...
 * Create free account with Supabase and create table from SQL menu/User Management Starter as per [tutorial](https://www.youtube.com/watch?v=x38PWNZhSEM)
-* Add data to table - I found image URLs from [Pinterest](https://www.pinterest.com.mx/) - exported as a CSV file - see `images_allRows.csv`
+* Add data to table - I found image URLs from [Pinterest](https://www.pinterest.com.mx/) - exported as a CSV file - see `images_allRows.csv`. It is easy to import this into a new Supabase table mand set id as the PRIMARY_ID
 * Create `.env.local` then add your Supabase API Authentication credentials as shown in `.env.example.local`
 * `ng serve` for a dev server. Navigate to `http://localhost:4200/` - app will automatically reload if you change any of the source files
 * `ng run build` for a build folder
@@ -78,12 +78,12 @@ export async function getStaticProps() {
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working
+* Status: Working, deployed to Vercel
 * To-Do: Nothing
 
 ## :clap: Inspiration
 
-* [Youtube: Building an Image Gallery with Next.js, Supabase, and Tailwind CSS](https://www.youtube.com/watch?v=BSoRXk1FIw8)
+* [Youtube: Lee Robinson: Building an Image Gallery with Next.js, Supabase, and Tailwind CSS](https://www.youtube.com/watch?v=BSoRXk1FIw8)
 
 ## :file_folder: License
 
