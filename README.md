@@ -1,6 +1,6 @@
 # :zap: Next Tailwind Supabase
 
-* Next.js frontend to display images and text from a Supabase PostgreSQL database
+* Next.js PWA to display data from a Supabase PostgreSQL database
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/next-tailwind-supabase?style=plastic)
@@ -28,10 +28,11 @@
 
 * Supabase is an open-source alternative to Firebase, but uses PostgreSQL instead of document database. Database is realtime & can use SQL joins. Realtime notifications via Websockets. RESTful API requires no backend code.
 * Next.js uses React v17
+* [Progressive Web App](https://en.wikipedia.org/wiki/Progressive_web_application) with a service worker for programmable content caching and a web manifest so app can be found by search engines.
 
 ## :camera: Screenshots
 
-![Example screenshot](./img/array.png)
+![Example screenshot](./img/lighthouse.png)
 
 ## :signal_strength: Technologies
 
@@ -79,15 +80,16 @@ export async function getStaticProps() {
 
 * Supabase user interface is cool to work with and they have SQL templates to create a user login etc.
 * Changes to the Supabase data are automatically displayed in the deployed app using a Supabase Function Hook
+* 100% perfect Lighthouse score
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working, deployed to Vercel
+* Status: Working PWA, deployed to Vercel. 100% Lighthouse score
 * To-Do: Nothing
 
 ## :clap: Inspiration
 
-* [Youtube: Lee Robinson: Building an Image Gallery with Next.js, Supabase, and Tailwind CSS](https://www.youtube.com/watch?v=BSoRXk1FIw8)
+* [Youtube: Lee Robinson: Building an Image Gallery with Next.js, Supabase, and Tailwind CSS](https://www.youtube.com/watch?v=BSoRXk1FIw8) but with my own database data, other modifications & conversion to PWA.
 
 ## :file_folder: License
 
